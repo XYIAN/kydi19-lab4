@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Sign up Page </title>
+     
+      <meta charset="utf-8">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       
+    
+      
+      <script SRC='js/function.js'></script>  
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <h1> Sign Up </h1>
+            <form id="signupForm" method="post" action="welcome.html">
+            <fieldset>
+            <legend>Sign Up</legend>
+            First Name:     <input type="text"  name="fName" required><br>
+            Last Name:      <input type="text"  name="lName"><br>
+            Gender:         <input type="radio" name="gender" value="m"> Male
+                            <input type="radio" name="gender" value="f"> Female<br><br>
+            Email:          <input type="text"><br> 
+            Phone Number:   <input type="text"><br><br>
+                        
+            Zip Code:       <input type="text" name="zip" id="zip" required><br> 
+            city:           <span id="city"></span><br>
+            Latitude:       <span id="latitude"></span><br>
+            Longitutde:     <span id="longitude"></span><br><br>
+            
+            State: 
+            <select id="state" name="state">
+                <option value="">Select One</option>
+                <option value="ca"> California</option>
+                <option value="ny"> New York</option>
+                <option value="tx"> Texas</option>
+                <option value="az"> Arizona</option>
+            </select><br />
+            
+            Select a County: <select id="county"></select><br><br>
+            
+            Desired Username: <input type="text"     id="username" name="username" required><br>
+                              <span id="usernameError"></span><br>
+            Password:         <input type="password" id="password" name="password" required><br>
+            Confirm Password: <input type="password" id="passwordConfirmation" required><br>
+                              <span id="passwordError"></span> <br /><br>
+            
+            <input type="submit" value="Sign up!">
+            </fieldset>
+            </form>
+        
 
     </body>
+    
+    <footer>
+        <h5> Kyle Dilbeck CST336 lab4 CSUMB 2019</h5>
+    </footer>
 </html>

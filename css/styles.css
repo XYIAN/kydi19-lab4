@@ -1,0 +1,8 @@
+body { background-color : #1FDED5; color:black; justify-content:center;}
+/*background color*/
+header, main, nav, footer { text-align: center; }
+/*align elements*/
+.footer
+{
+    color:white;
+}
