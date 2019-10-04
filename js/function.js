@@ -83,7 +83,7 @@ $(document).ready(function()
     });//end username
     
      $("#password").change(function(){
-        if($("#password").size() < 6)
+        if($("#password").length < 6)
         {
         $("#passwordError").html("Password must be longer than 6 characters");
         $("#passwordError").css("color", "red");
@@ -96,8 +96,10 @@ $(document).ready(function()
         alert("Submitting form...");
         if(!isFormValid())
         {
+        alert("All required fields must be filled to submit form data, please complete and resubmit");
         e.preventDefault();
         }
+        
     });//end sign up submit
     
   
@@ -114,7 +116,7 @@ $(document).ready(function()
             isValid = false; 
             $("#usernameError").html("Username is required");
         }
-        if($("#password").size() < 6)
+        if($("#password").length < 6)
         {
             $("#passwordError").html("Password must be longer than 6 characters");
             $("#passwordError").css("color", "red");
